@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C20095AB1CF7E1F6003C0AA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C20095AA1CF7E1F6003C0AA9 /* main.m */; };
+		C20095B31CF7E232003C0AA9 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = C20095B21CF7E232003C0AA9 /* ClassA.m */; };
+		C20095B61CF7E23F003C0AA9 /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = C20095B51CF7E23F003C0AA9 /* ClassB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		C20095A71CF7E1F6003C0AA9 /* RetainTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RetainTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20095AA1CF7E1F6003C0AA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C20095B11CF7E232003C0AA9 /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		C20095B21CF7E232003C0AA9 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		C20095B41CF7E23F003C0AA9 /* ClassB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		C20095B51CF7E23F003C0AA9 /* ClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				C20095AA1CF7E1F6003C0AA9 /* main.m */,
+				C20095B11CF7E232003C0AA9 /* ClassA.h */,
+				C20095B21CF7E232003C0AA9 /* ClassA.m */,
+				C20095B41CF7E23F003C0AA9 /* ClassB.h */,
+				C20095B51CF7E23F003C0AA9 /* ClassB.m */,
 			);
 			path = RetainTest;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20095B61CF7E23F003C0AA9 /* ClassB.m in Sources */,
+				C20095B31CF7E232003C0AA9 /* ClassA.m in Sources */,
 				C20095AB1CF7E1F6003C0AA9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +221,7 @@
 		C20095AF1CF7E1F6003C0AA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +229,7 @@
 		C20095B01CF7E1F6003C0AA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
